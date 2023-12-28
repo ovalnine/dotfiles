@@ -9,9 +9,9 @@ smart_borders on
 # is used in the bar {} block below.
 font pango:monospace 8
 
-# Start Polybar (a highly customizable status bar)
 # Use exec_always to run the script on i3 config reloads as well
-# We use the launch.sh script to be able to restart Polybar with the window manager (i3)
+# We use the launch.sh script to be able to restart with the window manager (i3)
+# Start Polybar (a highly customizable status bar)
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 # Use Mouse+$mod to drag floating windows to their wanted position
@@ -132,3 +132,8 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
+
+# window colors
+# class                 border  backgr. text    indicator child_border
+client.focused          #ea9d34 #285577 #ffffff #2e9ef4   #ea9d35
+client.unfocused        #faf4ed #222222 #888888 #292d2e   #faf4ed

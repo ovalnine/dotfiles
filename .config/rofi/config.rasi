@@ -1,0 +1,10 @@
+@import "rose-pine-moon"
+
+* {
+	font: "monospace 10";
+}
+
+#window {
+	border-radius: 0;
+	border: 2;
+}
