@@ -45,9 +45,9 @@ cmp.setup({
 		end,
 	},
 	mapping = cmp.mapping.preset.insert({
-		['<C-Space>'] = cmp.mapping.complete(), -- Insert mode only
+		['<C-Space>'] = cmp.mapping.complete(), -- Shows on insert mode only
 		['<C-e>'] = cmp.mapping.abort(),
-		['<CR>'] = cmp.mapping.confirm({ select = true }),
+		['<CR>'] = cmp.mapping.confirm({ select = false }),
 		['<Tab>'] = cmp.mapping(function(fallback)
 			if cmp.visible() then
 				cmp.select_next_item()
