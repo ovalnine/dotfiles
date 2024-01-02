@@ -14,11 +14,13 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Which plugins would you like to load?
 plugins=(git)
 
-# Allow aliases completion
+# Allow aliases completion (Mostly used for the config alias of dotfiles)
 unsetopt completealiases
-
 # dotfiles management alias
 alias config='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
+
+# Add unmanaged bin files
+export PATH="$HOME/deps/janet-v1.32.1-linux/bin:$PATH"
 
 source $ZSH/oh-my-zsh.sh
 
