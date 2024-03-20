@@ -19,9 +19,6 @@ unsetopt completealiases
 # dotfiles management alias
 alias config='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
 
-# Add unmanaged bin files
-export PATH="$HOME/deps/janet-v1.32.1-linux/bin:$PATH"
-
 source $ZSH/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
