@@ -1,4 +1,5 @@
 vim.g.mapleader = " "
+vim.g.maplocalleader = ","
 vim.o.background = "light"
 
 -- enable line numbers (relative)
@@ -6,9 +7,9 @@ vim.opt.nu = true
 vim.opt.relativenumber = true
 
 -- indenting
-vim.opt.tabstop = 3
-vim.opt.softtabstop = 3
-vim.opt.shiftwidth = 3
+vim.opt.tabstop = 2
+vim.opt.softtabstop = 2
+vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
 vim.opt.smartindent = true
 
@@ -32,6 +33,10 @@ vim.opt.termguicolors = true
 vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
 vim.opt.colorcolumn = "120"
+
+-- spelling
+vim.opt.spelllang = 'en_us'
+vim.opt.spell = true
 
 -- remappings
 -- move highlighted lines
